@@ -36,7 +36,7 @@ def get_daily_totals():
     """Collect 7 days of visitor totals from the user, one per weekday."""
     day_figures = []
 
-    for weekday in range(1, 8):
+    for weekday in range(7):
         value = get_valid_input(f"ENTER VALUE FOR {get_weekday_by_index(weekday)}: ")
         day_figures.append(value)
 
